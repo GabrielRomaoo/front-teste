@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ml-2 {
+  margin-left : 20px;
+}
+
+.mt-2{
+  margin-top: 20px;
+}
+
+

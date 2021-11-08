@@ -1,0 +1,31 @@
+
+  <mat-form-field [formGroup]="form" class="ml-2 mt-2">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="nome">
+  </mat-form-field>
+
+  <mat-form-field class="ml-2 mt-2">
+    <mat-label>Sobrenome</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="sobrenome">
+  </mat-form-field>
+
+  <mat-form-field class="ml-2 mt-2">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" type="email" formControlName="email">
+  </mat-form-field>
+
+  <mat-form-field class="ml-2 mt-2">
+    <mat-label> Data Nascimento </mat-label>
+    <input matInput placeholder="Placeholder" type="date" formControlName="dataNascimento">
+  </mat-form-field>
+
+  <mat-form-field class="ml-2 mt-2">
+    <mat-label>Escolaridade</mat-label>
+    <mat-select formControlName="escolaridade">
+      <mat-option *ngFor="let escolaridade of escolaridades | keyvalue" value= {{escolaridade.value}}> {{escolaridade.value}} </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-button type="submit" class="ml-2 mt-2"> Cadastrar </button>
+
+
